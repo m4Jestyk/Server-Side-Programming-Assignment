@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.png" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="https://gdsc.ietdavv.edu.in/">GDSC</a></li>
+				<li><a href="courses.html">Courses</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Courses
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+		<!-- Courses section starts from here -->
+	<section id="course">
+		<h1>B.E. Courses</h1>
+
+		<div class="course-box">
+			<div class="course-box">
+				<div class="courses">
+					<img src="img/b4.png" alt="">
+					<div class="details">
+						<h6>Computer Engineering</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/b3.jpg" alt="">
+					<div class="details">
+						<h6>Information Technology</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/c5.jpg" alt="">
+					<div class="details">
+						<h6>Electronics and Telecommunication</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/ins.jpeg" alt="">
+					<div class="details">
+						<h6>Electronics and Instrumentation</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/mech.jpeg" alt="">
+					<div class="details">
+						<h6>Mechanical</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/civil.jpg" alt="">
+					<div class="details">
+						<h6>Civil Engineering</h6>
+	
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Courses section ends from here -->
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="copyright">
+			<p>@copyright atharv24
+			</p>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Courses</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="about.css">
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- Navigation start -->
+	<nav>
+		<img src="img/logo.jpg" class="logo" alt="">
+
+		<div class="navigation">
+			<ul>
+				<i id="menu-close" class="fas fa-times"></i>
+				<li><a href="index.html" class="active">Home</a></li>
+				<li><a href="courses.html">Heritage</a></li>
+				<li><a href="https://www.booking.com/city/in/indore.html">Hotel Booking</a></li>
+				<li><a href="courses.html">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<img src="img/menu.png" id="menu-btn" alt="">
+		</div>
+	</nav>
+	<!-- Navigation ends -->
+
+
+	<!-- Hero section starts from here -->
+	<section id="about-home">
+		<h2>
+			Heritage Sites
+		</h2>
+	</section>
+	<!-- Hero section ends from here -->
+
+		<!-- Courses section starts from here -->
+		<section id="course">
+			<h1>Heritage Places</h1>
+			<p>in and around Indore</p>
+	
+			<div class="course-box">
+				<div class="courses">
+					<img src="img/rajwada.jpg" alt="">
+					<div class="details">
+						<h6>Rajwada</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/krishna.jpg" alt="">
+					<div class="details">
+						<h6>Krishna Pura Chhatri</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/gandhihall.jpeg" alt="">
+					<div class="details">
+						<h6>Gandhi Hall</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/lalbagh.jpg" alt="">
+					<div class="details">
+						<h6>Lal bagh Palace</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/mandir.jpg" alt="">
+					<div class="details">
+						<h6>Kaanch Mandir</h6>
+	
+					</div>
+				</div>
+	
+				<div class="courses">
+					<img src="img/ralamandal.jpg" alt="">
+					<div class="details">
+						<h6>Ralamandal Wildlife Sanctuary</h6>
+	
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- Courses section ends from here -->
+
+	<!-- Footer section starts from here -->
+	<footer>
+		<div class="copyright">
+			<p>@copyright atharv24
+			</p>
+		</div>
+	</footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+</body>
+</html>
